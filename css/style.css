@@ -1,0 +1,346 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: normal;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.header {
+    padding-top: 61px;
+    padding-bottom: 117px;
+    background-color: #8c5d79;
+}
+
+.container {
+    width: 1067px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 280px;
+    height: 112px;
+    margin-bottom: 113px;
+    background-color: #5a9aa8;
+}
+
+.promo {
+    position: relative;
+}
+
+.promo__bg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #5a9aa8;
+    width: 350px;
+    height: 350px;
+    z-index: 0;
+}
+
+.promo__list {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.promo__item {
+    display: inline-block;
+    margin-bottom: 48px;
+    width: 50%;
+    height: 85px;
+    line-height: 85px;
+    padding: 0;
+    border: none;
+}
+
+.promo__item:nth-child(n+5) {
+    margin-bottom: 0;
+}
+
+.promo__text {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    font-size: 22px;
+    position: relative;
+    margin: 0;
+    width: 417px;
+}
+
+.promo__item:nth-child(2n) {
+    text-align: right;
+}
+
+.promo__item:nth-child(2n) .promo__text {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.promo__item:nth-child(1) .promo__text,
+.promo__item:nth-child(5) .promo__text {
+    margin-left: 28px;
+}
+
+.promo__item:nth-child(2) .promo__text,
+.promo__item:nth-child(6) .promo__text {
+    margin-right: 28px;
+}
+
+.promo__text::before {
+    content: "";
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.promo__item:nth-child(2n) .promo__text::before {
+    left: 0;
+}
+
+.promo__item:nth-child(2n-1) .promo__text::before {
+    right: 0;
+}
+
+.main {
+    display: table;
+    margin-top: 31px;
+    margin-bottom: 94px;
+}
+
+.content {
+    margin-right: auto;
+    display: table-cell;
+}
+
+.coupon {
+    margin-bottom: 45px;
+}
+
+.coupon__left {
+    display: table-cell;
+    box-sizing: border-box;
+    background-color: #89c39b;
+    padding-left: 170px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.coupon__img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 37px;
+    border-radius: 50%;
+    background-color: #8c5d79;
+}
+
+.coupon__text {
+    display: inline-block;
+    width: 409px;
+}
+
+.coupon__title {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.coupon__desc {
+    font-size: 18px;
+    margin: 0;
+    min-height: 103px;
+}
+
+.coupon__right {
+    display: table-cell;
+    background-color: #8c5d79;
+    width: 141px;
+    min-height: 190px;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+}
+
+.coupon__inner {
+    position: absolute;
+    height: 150px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.coupon__likes {
+    margin-bottom: 5px;
+}
+
+.coupon__inter {
+    margin: 0;
+}
+
+.coupon__number {
+    margin: 0 auto;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: 2.5px solid #ffffff;
+}
+
+.goods__list {
+    float: left;
+}
+
+.goods__item {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    width: 350px;
+    margin-bottom: 50px;
+    vertical-align: text-top;
+}
+
+.goods__item:nth-child(2n - 1) {
+    margin-right: 30px;
+}
+
+.radio:checked + .radio-label .goods__img {
+    background-color: #5a9aa8;
+}
+
+.radio-label {
+    cursor: pointer;
+}
+
+.goods__img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: #89c39b;
+}
+
+.goods__item:hover .goods__img,
+.goods__item:focus .goods__img,
+.goods__item:active .goods__img {
+    background-color: #5a9aa8;
+}
+
+.goods__name {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+}
+
+.goods__description {
+    margin: 0;
+}
+
+.goods__btn {
+    padding-top: 130px;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.goods__item:nth-child(2n) + .goods__btn {
+    width: 730px;
+    padding-top: 0;
+    margin-right: 0;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: #8c5d79;
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', sans-serif;
+    cursor: pointer;
+}
+
+.sidebar {
+    display: table-cell;
+    width: 267px;
+    padding: 0;
+    margin: 0;
+    background-color: #8c5d79;
+    border-top: 8px solid #ffffff;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-top: 156px;
+    padding-bottom: 123px;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 13px;
+}
